@@ -90,6 +90,10 @@ P.S. You can delete this when you're done too. It's your config now! :)
 vim.g.mapleader = ' '
 vim.g.maplocalleader = ' '
 
+-- DSM: use isolated python and node environments
+vim.g.python3_host_prog = vim.fn.expand '~/.local/share/nvim/venv/bin/python3'
+vim.g.node_host_prog = vim.fn.expand '~/.local/share/nvim/node/node_modules/.bin/neovim-node-host'
+
 -- Set to true if you have a Nerd Font installed and selected in the terminal
 vim.g.have_nerd_font = false
 
